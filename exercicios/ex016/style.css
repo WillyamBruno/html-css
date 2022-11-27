@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #04D939 20%, #03A63C);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;/*Serve para arredondar os cantos da folha de leitura*/
+    box-shadow: 5px 5px 15px #012340af ;/*primeiro parametro é quanto essa sombra vai andar para o lado, a segunda é quando essa sombra vai andar para baixo, o terceiro é o quanto a sombra vai espalhar, o último é quanto de transparência ela vai ter.*/
+    width: 600px;/*largura da folha de leitura*/
+    padding: 10px;/*Distância do texto para a borda da folha de leitura*/
+    margin: auto;
+}
+
+h1 {
+color:#025939 ;
+text-align: justify;
+text-shadow: 1px 1px 2px #02462dca ;/*deixa o texto um pouco mais estufado, da um efeito legal para títulos.*/
+}
+
+h2 {
+color: #03A63C;
+}
+
+p {
+    text-align: justify;
+}
