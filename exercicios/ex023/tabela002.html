@@ -14,13 +14,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray;
+            background-color: rgb(183, 183, 183);
         }
 
         td, th {
@@ -32,14 +33,19 @@
             text-align: right;
         }
 
-        thead {
+        thead > tr > th {
+             position: sticky;
+             top: -1px;
+             background-color: gray;
+        }
+
+        tfoot, thead {
             background-color: gray;
             color: white;
         }
 
-        tfoot {
-            background-color: gray;
-            color: white;
+        tbody > tr:nth-child(2n) {
+           background-color: lightgray;
         }
 
     </style>
@@ -62,8 +68,8 @@
         <caption>População das Unidades Fedearativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style=" width: 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -79,13 +85,69 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 851</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 781</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 851</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 781</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 851</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 781</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 851</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>84.352.773</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, optio. Fugit illum vitae nam alias impedit, nisi nulla a neque temporibus velit ad totam blanditiis ratione ex facere numquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam sed doloremque nobis optio voluptatem alias? Modi saepe vitae culpa dicta impedit, quasi fuga fugit magnam, quos, ex beatae iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequuntur explicabo sunt neque culpa labore harum nulla necessitatibus, voluptatibus magni odio eaque consequatur suscipit veniam aliquid minus possimus quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sed soluta ad odio tenetur nulla possimus cum officiis illum animi fugiat recusandae iste quaerat veritatis excepturi, vel ratione inventore quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, optio. Fugit illum vitae nam alias impedit, nisi nulla a neque temporibus velit ad totam blanditiis ratione ex facere numquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam sed doloremque nobis optio voluptatem alias? Modi saepe vitae culpa dicta impedit, quasi fuga fugit magnam, quos, ex beatae iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequuntur explicabo sunt neque culpa labore harum nulla necessitatibus, voluptatibus magni odio eaque consequatur suscipit veniam aliquid minus possimus quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sed soluta ad odio tenetur nulla possimus cum officiis illum animi fugiat recusandae iste quaerat veritatis excepturi, vel ratione inventore quaeLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, optio. Fugit illum vitae nam alias impedit, nisi nulla a neque temporibus velit ad totam blanditiis ratione ex facere numquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam sed doloremque nobis optio voluptatem alias? Modi saepe vitae culpa dicta impedit, quasi fuga fugit magnam, quos, ex beatae iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequuntur explicabo sunt neque culpa labore harum nulla necessitatibus, voluptatibus magni odio eaque consequatur suscipit veniam aliquid minus possimus quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sed soluta ad odio tenetur nulla possimus cum officiis illum animi fugiat recusandae iste quaerat veritatis excepturi, vel ratione inventore quaeLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, optio. Fugit illum vitae nam alias impedit, nisi nulla a neque temporibus velit ad totam blanditiis ratione ex facere numquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquam sed doloremque nobis optio voluptatem alias? Modi saepe vitae culpa dicta impedit, quasi fuga fugit magnam, quos, ex beatae iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur consequuntur explicabo sunt neque culpa labore harum nulla necessitatibus, voluptatibus magni odio eaque consequatur suscipit veniam aliquid minus possimus quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sed soluta ad odio tenetur nulla possimus cum officiis illum animi fugiat recusandae iste quaerat veritatis excepturi, vel ratione inventore quae</p>
 </body>
 </html>
