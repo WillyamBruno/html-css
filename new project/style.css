@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'jujutsu';
+    src: url('fonte/Rubik-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'jujutsu2';
+    src: url('fonte/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: justify;
+    font-family:'jujutsu2';
+    color: rgb(41, 41, 41);
+    background-color: darkred;
+    
+}
+
+
+header {
+    background-color: white;
+}
+
+header > nav {
+    display: inline-block;
+}
+
+nav > a {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+    color: rgb(228, 0, 0);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: rgb(252, 69, 69);
+}
+
+nav > a::after {
+    content: "\1F517";
+}
+
+a {
+    text-decoration: none;
+}
+
+#italic {
+    font-family: 'jujutsu';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    margin: 10px auto auto auto;
+}
+
+main > p {
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+footer {
+
+    background-color: black;
+    padding: 1em;
+}
+
+footer > p {
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
