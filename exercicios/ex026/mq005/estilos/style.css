@@ -19,6 +19,24 @@ header > h1 {
     text-align: center;
 }
 
+span#burg {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burg:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
 menu > ul {
     list-style-type: none;
 }
